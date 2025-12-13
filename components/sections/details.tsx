@@ -68,8 +68,8 @@ export function Details() {
   const receptionMapsLink = `https://maps.google.com/?q=${encodeURIComponent(siteConfig.reception.location)}`
 
   // Palettes (used only for color chips in attire card) - Warm blush motif
-  const sponsorPalette = ["#D1AB6D", "#909E8D", "#525E2C"]
-  const guestPalette = ["#909E8D", "#D1AB6D", "#E0CFB5", "#F0F0EE"]
+  const sponsorPalette = ["#909E8D", "#525E2C"]
+  const guestPalette = ["#D1AB6D", "#E0CFB5"]
   const secondaryPalette = ["#F0F0EE", "#E0CFB5", "#E0CFB5", "#909E8D", "#D1AB6D"]
 
   const openInMaps = (link: string) => {
@@ -316,7 +316,7 @@ export function Details() {
                   <p className="text-[10px] sm:text-xs text-[#D1AB6D]/80 mb-2">Kindly align attire below.</p>
                   <div className="relative w-full aspect-[4/3] sm:aspect-[5/3] rounded-xl overflow-hidden border border-[#F5E5D9] bg-[#FDF9F6] mb-3">
                     <Image
-                      src="/Details/Gemini_Generated_Image_qr3jfqqr3jfqqr3j-removebg-preview.png"
+                      src="/Details/Wedding Guests1.png"
                       alt="Guest attire guideline"
                       fill
                       className="object-contain"
