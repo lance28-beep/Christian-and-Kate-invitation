@@ -147,21 +147,14 @@ export function Narrative() {
           </div>
 
           {/* Story text container with background panel for readability */}
-          <div className="relative overflow-hidden rounded-3xl sm:rounded-[2rem] border border-[#E0CFB5]/70 bg-[#525E2C] backdrop-blur-2xl shadow-[0_16px_60px_rgba(0,0,0,0.35)] px-5 sm:px-8 md:px-10 py-8 sm:py-10 md:py-12">
+          <div className="relative overflow-hidden rounded-3xl sm:rounded-[2rem] border border-white/40 bg-white/85 backdrop-blur-lg shadow-[0_18px_40px_rgba(210,164,164,0.18)] px-5 sm:px-8 md:px-10 py-8 sm:py-10 md:py-12">
             {/* Layered glass + light accents for readability */}
             <div className="pointer-events-none absolute inset-0">
-              {/* Solid primary background with slight transparency */}
-              <div
-                className="absolute inset-0 opacity-90"
-                style={{
-                  backgroundColor: "#525E2C",
-                }}
-              />
               {/* Subtle radial highlights */}
-              <div className="absolute -top-24 left-1/2 -translate-x-1/2 w-80 h-80 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.55),transparent_60%)] opacity-80" />
-              <div className="absolute bottom-[-6rem] right-[-2rem] w-64 h-64 bg-[radial-gradient(circle_at_center,rgba(144,158,141,0.35),transparent_60%)] opacity-85" />
+              <div className="absolute -top-24 left-1/2 -translate-x-1/2 w-80 h-80 bg-[radial-gradient(circle_at_center,rgba(209,171,109,0.15),transparent_60%)] opacity-60" />
+              <div className="absolute bottom-[-6rem] right-[-2rem] w-64 h-64 bg-[radial-gradient(circle_at_center,rgba(144,158,141,0.1),transparent_60%)] opacity-50" />
               {/* Inner border glow */}
-              <div className="absolute inset-[1px] rounded-[inherit] border border-white/30" />
+              <div className="absolute inset-[1px] rounded-[inherit] border border-white/60" />
             </div>
 
           <div id="story-panel" className="relative space-y-4 md:space-y-6" aria-live="polite">
@@ -177,18 +170,16 @@ export function Narrative() {
                 {/* First paragraph with drop cap */}
                 {index === 0 ? (
                   <p 
-                    className="text-sm md:text-base leading-relaxed text-[#F0F0EE] text-pretty font-sans font-light pl-3 md:pl-6"
-                    style={{ textShadow: "0 1px 8px rgba(255,255,255,0.4)" }}
+                    className="text-sm md:text-base leading-relaxed text-gray-700 text-pretty font-sans font-light pl-3 md:pl-6"
                   >
-                    <span className="float-left text-3xl md:text-5xl lg:text-6xl font-serif font-bold text-[#F0F0EE] leading-none mr-2 mt-1 drop-shadow-[0_4px_16px_rgba(0,0,0,0.4)]">
+                    <span className="float-left text-3xl md:text-5xl lg:text-6xl font-serif font-bold text-gray-800 leading-none mr-2 mt-1">
                       {paragraph.charAt(0)}
                     </span>
                     {paragraph.slice(1)}
                   </p>
                 ) : (
                   <p 
-                    className="text-sm md:text-base leading-relaxed text-[#F0F0EE] text-pretty font-sans font-light pl-3 md:pl-6"
-                    style={{ textShadow: "0 1px 8px rgba(255,255,255,0.4)" }}
+                    className="text-sm md:text-base leading-relaxed text-gray-700 text-pretty font-sans font-light pl-3 md:pl-6"
                   >
                     {paragraph}
                   </p>
