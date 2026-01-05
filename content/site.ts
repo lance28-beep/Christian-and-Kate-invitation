@@ -31,7 +31,7 @@ export const siteConfig = {
     location: "Golden Peak Hotel & Suites, Escario Cebu",
     venue: "Golden Peak Hotel & Suites",
     date: "January 10, 2026",
-    time: "Following the ceremony",
+    time: "6pm-9pm",
   },
   dressCode: {
     theme: "Blue Gray & Gold Motif",
