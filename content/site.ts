@@ -7,7 +7,7 @@ export const siteConfig = {
   },
   wedding: {
     date: "January 10, 2026",
-    time: "2:00 PM",
+    time: "2:30 PM",
     venue: "St. Joseph the Patriarch Parish, Mabolo, Cebu City",
     tagline: "are getting married!",
     theme: "Blue Gray & Gold Motif",
@@ -23,15 +23,18 @@ export const siteConfig = {
     venue: "St. Joseph the Patriarch Parish",
     date: "January 10, 2026",
     day: "Saturday",
-    time: "2:00 PM",
+    time: "2:30 PM",
     entourageTime: "1:30 PM",
-    guestsTime: "1:30 PM",
+    guestsTime: "2:00 PM",
   },
   reception: {
     location: "Golden Peak Hotel & Suites, Escario Cebu",
     venue: "Golden Peak Hotel & Suites",
     date: "January 10, 2026",
     time: "6pm-9pm",
+  },
+  sendOff: {
+    time: "10:00 PM",
   },
   dressCode: {
     theme: "Blue Gray & Gold Motif",

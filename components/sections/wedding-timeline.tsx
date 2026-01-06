@@ -19,6 +19,7 @@ const guestsTime = siteConfig.ceremony.guestsTime
 const ceremonyVenue = siteConfig.ceremony.venue
 const receptionVenue = siteConfig.reception.venue
 const receptionTime = siteConfig.reception.time
+const sendOffTime = siteConfig.sendOff?.time || "10:00 PM"
 
 type TimelineIcon = React.ComponentType<React.SVGProps<SVGSVGElement>>
 
@@ -55,7 +56,7 @@ const timelineEvents: TimelineEvent[] = [
     icon: DinnerIcon,
   },
   {
-    time: "Send-off",
+    time: sendOffTime,
     title: "Send-off",
     description: `A warm send-off for Christian & Kate as they begin their new chapter together.`,
     location: receptionVenue,

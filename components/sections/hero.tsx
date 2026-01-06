@@ -101,7 +101,7 @@ export function Hero() {
   const [weddingMonth = "June", weddingDayRaw = "7", weddingYear = "2026"] =
     siteConfig.wedding.date.split(" ")
   const weddingDayNumber = weddingDayRaw.replace(/[^0-9]/g, "") || "7"
-  const ceremonyTime = siteConfig.wedding.time
+  const ceremonyTime = siteConfig.ceremony.time
   const groomName = siteConfig.couple.groomNickname || siteConfig.couple.groom
   const brideName = siteConfig.couple.brideNickname || siteConfig.couple.bride
   const ceremonyDayShort = siteConfig.ceremony.day
